@@ -180,6 +180,8 @@ void Settings::InitKeyMap() const {
       {AppSettingKey::StreamWakanim, {"recognition/streaming/providers/wakanim", true}},
       {AppSettingKey::StreamYahoo, {"recognition/streaming/providers/yahoo", true}},
       {AppSettingKey::StreamYoutube, {"recognition/streaming/providers/youtube", true}},
+      {AppSettingKey::StreamTwist, {"recognition/streaming/providers/twist", true}},
+      {AppSettingKey::StreamKissanime, {"recognition/streaming/providers/kissanime", true}},
 
       // Sharing
       {AppSettingKey::ShareDiscordApplicationId, {"announce/discord/applicationid", std::wstring{link::discord::kApplicationId}}},
@@ -948,6 +950,22 @@ bool Settings::GetStreamYoutube() const {
 
 void Settings::SetStreamYoutube(const bool enabled) {
   set_value(AppSettingKey::StreamYoutube, enabled);
+}
+
+bool Settings::GetStreamTwist() const {
+  return value<bool>(AppSettingKey::StreamTwist);
+}
+
+void Settings::SetStreamTwist(const bool enabled) {
+  set_value(AppSettingKey::StreamTwist, enabled);
+}
+
+bool Settings::GetStreamKissanime() const {
+  return value<bool>(AppSettingKey::StreamKissanime);
+}
+
+void Settings::SetStreamKissanime(const bool enabled) {
+  set_value(AppSettingKey::StreamKissanime, enabled);
 }
 
 // Sharing

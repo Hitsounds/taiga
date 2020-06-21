@@ -191,6 +191,8 @@ void AppSettings::InitializeMap() {
   INITKEY(kStream_Wakanim, L"true", L"recognition/streaming/providers/wakanim");
   INITKEY(kStream_Yahoo, L"true", L"recognition/streaming/providers/yahoo");
   INITKEY(kStream_Youtube, L"true", L"recognition/streaming/providers/youtube");
+  INITKEY(kStream_Twist, L"true", L"recognition/streaming/providers/twist");
+  INITKEY(kStream_KissAnime, L"true", L"recognition/streaming/providers/kissanime");
 
   // Sharing
   INITKEY(kShare_Discord_ApplicationId, kDiscordApplicationId, L"announce/discord/applicationid");

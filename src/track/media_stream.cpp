@@ -57,6 +57,26 @@ static const std::vector<StreamData> stream_data{
     std::regex("animenewsnetwork\\.(?:com|cc)/video/[0-9]+"),
     std::regex("(.+) - Anime News Network"),
   },
+  //Twist.moe
+  {
+    Stream::Twist,
+    taiga::kStream_Twist,
+    L"Twist",
+    L"https://twist.moe",
+    std::regex(
+      "twist\.moe/(?:a|anime)/"
+    ),
+    std::regex("(.+) - Anime Twist"),
+  },
+  //Kissanime.ru
+  {
+    Stream::KissAnime,
+    taiga::kStream_KissAnime,
+    L"KissAnime",
+    L"https://kissanime.ru",
+    std::regex("kissanime\\.ru/Anime/"),
+    std::regex("(.+) - Watch .+ online in high quality"),
+  },
   // Crunchyroll
   {
     Stream::Crunchyroll,

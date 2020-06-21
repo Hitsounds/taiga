@@ -88,6 +88,8 @@ enum class Stream {
   Wakanim,
   Yahoo,
   Youtube,
+  Twist,
+  KissAnime,
 };
 
 struct StreamData {
